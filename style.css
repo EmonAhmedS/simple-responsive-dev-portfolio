@@ -1,0 +1,244 @@
+ body{
+    font-family: "Open Sans", system-ui;
+}
+
+header{
+    background-color: #FFF8F3;
+    background-image: url('images/developer.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    
+}
+nav{
+    display: flex;
+   justify-content: space-between;
+    align-items: center;  
+   margin: 0 150px;
+}
+ nav >ul{
+    list-style: none;
+    display: flex;
+} 
+/* nav li{
+    
+    display: inline;
+} */
+nav a{
+    text-decoration: none;
+    margin-right: 30px;
+}
+.nav-title{
+    color:  #181818;
+    font-size: 45px;
+    font-weight: 800;  
+}
+.text-primay{
+    color: #FD6E0A;
+    font-size: 45px;
+    font-weight: 800; 
+
+    }
+.btn-primary{
+    color: white;
+    background-color: #FD6E0A;
+    padding: 18px;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 700;
+    margin-right: 20px;
+    
+    
+}
+/* আমি এখন ব্যানারের কাজ করবো */
+ .banner-container{
+    display: flex;
+    align-items: center;
+    padding: 30px 30px 0px 150px;
+    background-image: url('images/header_bg.png');
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: 600px;
+} 
+
+.banner-pic{
+    width: 500px;
+    height: 450px;
+    margin-left: auto;
+    
+}
+.banner-discription{
+    max-width: 500px;
+}
+
+
+/* মেইন সেকশনের কাজ শুরু */
+ main{
+    
+    max-width: 1140px;
+      margin: auto; 
+} 
+.about-me-container{
+    margin-top: 150px;
+    border-radius: 10px;
+    background: #FFF8F3;
+    padding: 30px 150px;
+}
+.about-info-container{
+    display: flex;
+    justify-content: space-between;
+}
+.about-me-title{
+    color:  #181818;
+    text-align: center;
+    font-size: 35px;
+    font-weight: 700;
+   
+}
+.about-me-discription{
+    color:  #757575;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+}
+.skill-container{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.what-I-do{
+    padding: 30px ;
+}
+
+.skill-info{
+    padding: 30px; 
+    box-shadow: 3px 3px 3px 3px yellowgreen;
+
+}
+.skill-discription{
+    color:  #757575;
+    font-size: 16px;
+    font-weight: 400;  
+}
+   
+.resume-container{
+    display: flex;
+    gap: 50px;
+} 
+
+.resume-title{
+    text-align: center;
+    color:  #181818;
+    font-size: 35px;
+    font-weight: 700;
+    margin-top: 130px;
+
+}
+.resume-btn{
+    text-align: center;
+    margin-top: 30px;
+}
+/* ফুটারের কাজ করছি */
+ footer{
+    display: flex;
+    background: #FFF8F3;
+    margin-top: 100px;
+    padding: 130px 200px;
+    gap: 60px;
+}
+.footer-colum{
+    width: 50%;
+}
+.contact input, textarea{
+    display: block;
+    margin-bottom: 15px;
+    padding: 18px 30px;
+    border: none;
+    border-radius: 10px;   
+
+}
+.contact input[type="text"], .contact input[type="email"]{
+    width: 100%;
+}
+ textarea{
+    resize: none;
+    width: 100%;
+} 
+.social a{
+    margin-right: 30px;
+} 
+
+.hide{
+    display: none;
+}
+
+
+/* responsive styles for small devices */
+
+@media screen and (max-width:576px) {
+
+     header{  
+        background-image: none;
+    } 
+     .banner-container{ 
+        flex-direction: column;
+        background-image: none;
+        padding: 20px;
+    }  
+    .banner-pic{
+        width: 100%;
+        height: 100%;
+    } 
+     nav{
+        flex-direction: column;
+    } 
+    nav >ul{
+        flex-direction: column;
+        gap: 20px;
+    } 
+
+
+    /* about me পার্টের কাজ শুরু */
+    .about-me-container{
+
+        padding: 10px;
+}
+    .about-me-discription{
+        text-align: justify;
+
+ }
+
+.about-info-container{
+   flex-direction: column;
+}
+/* about me পার্টের কাজ শেষ */
+
+.skill-container{
+    flex-direction: column;
+}
+ /* resume পার্টের কাজ শুরু */
+
+.resume-container{
+    flex-direction: column;
+} 
+
+
+/* resume পার্টের কাজ শেষ */
+
+/* footer part শুরু */
+footer{
+   flex-direction: column;
+   padding: 15px;
+}
+.footer-colum{
+    width: 100%;
+
+}
+.contact input[type="text"], .contact input[type="email"]{
+    width: 75%;
+}
+ textarea{
+    resize: none;
+    width: 75%;
+} 
+}
